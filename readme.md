@@ -7,3 +7,15 @@
 - (2) DCS-7050CX3-32S-D-F
 
 ![L2LS Topo](images/clab-l2ls-topo.png)
+
+## Start Lab
+
+``` bash
+sudo clab deploy -t clab/l2ls-lab-topo.yaml --reconfigure
+```
+
+## Stop Lab
+
+``` bash
+sudo clab destroy -t clab/l2ls-lab-topo.yaml --cleanup
+```
