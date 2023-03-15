@@ -1,21 +1,12 @@
 ---
-# -------------------------------------------------------------
-# Arista Data Center Topology
-# 2 Spines & 2 Leaf Pairs with MLAG
-# -------------------------------------------------------------
-
-#https://containerlab.dev/manual/topo-def-file/#name
 name: L2LS
 
-#https://containerlab.dev/manual/topo-def-file/#prefix
 prefix: ""
 
-#https://containerlab.dev/manual/network/#configuring-management-network
 mgmt:
   network: mgmt
   ipv4_subnet: 172.100.100.0/24
 
-#https://containerlab.dev/manual/topo-def-file/#topology
 topology:
 
   defaults:
@@ -32,7 +23,6 @@ topology:
 # SPINE                 #
 #########################
 
-#https://containerlab.dev/manual/topo-def-file/#nodes
     SPINE1:
       kind: ceos
       mgmt_ipv4: 172.100.100.101
@@ -109,7 +99,6 @@ topology:
         - '8008:80'
         - '44308:443'
 
-#https://containerlab.dev/manual/topo-def-file/#links
   links:
 
 ####################
