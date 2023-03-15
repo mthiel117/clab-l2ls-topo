@@ -11,11 +11,11 @@
 ## Start Lab
 
 ``` bash
-sudo clab deploy -t clab/l2ls-lab-topo.yaml --reconfigure
+make start-lab
 ```
 
 ## Stop Lab
 
 ``` bash
-sudo clab destroy -t clab/l2ls-lab-topo.yaml --cleanup
+make stop-lab
 ```
